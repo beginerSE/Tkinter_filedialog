@@ -9,9 +9,11 @@ import os
 
 # ファイルの参照処理
 def click_refer_button():
+    # ファイルエクスプローラーを起動する
     fTyp = [("","*")]
     iDir = os.path.abspath(os.path.dirname(__file__))
     filepath = filedialog.askopenfilename(filetypes = fTyp,initialdir = iDir)
+    # 取得したファイルパスをボックスに出力する
     file_path.set(filepath)
 
 
